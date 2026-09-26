@@ -88,6 +88,12 @@ int input_from_file(const char *path, Process p[], int max_n);
  *     kiểm tra từng bước để không tràn int) */
 int validate_processes(const Process p[], int n);
 
+/* Điền order[0..n-1] là các chỉ số của p[] sắp theo arrival_time tăng dần,
+ * hòa thì theo chỉ số tăng dần (ổn định). KHÔNG sửa p[] (quy ước 1). Mọi
+ * thuật toán cần thứ tự đến (FCFS, SJF, Priority, RR...) dùng hàm này thay vì
+ * tự viết lại bản sắp xếp riêng. A cài đặt trong util.c. */
+void sort_by_arrival(const Process p[], int n, int order[]);
+
 void schedule_fcfs(Process p[], int n, GanttEntry g[], int *g_len);
 
 /* ---------- Nhóm B, C, D: thuật toán ---------- */
