@@ -74,10 +74,18 @@ typedef struct {
 
 /* ---------- Nhóm A: nhập liệu, validate, FCFS ---------- */
 
-/* Nhập tay từ bàn phím. Trả về số process đọc được, hoặc -1 nếu lỗi. */
+/* Nhập tay từ bàn phím, kiểm tra và cho nhập lại ngay từng process sai (gọi
+ * validate_processes trên phần đã nhập). Trả về n, hoặc -1 nếu gặp EOF.
+ * LƯU Ý: input_from_* chỉ phân tích cú pháp (file) hoặc kiểm tra từng bước
+ * (bàn phím); main vẫn PHẢI gọi validate_processes cho mọi nguồn dữ liệu
+ * trước khi chạy thuật toán. */
 int input_from_keyboard(Process p[], int max_n);
 
-/* Đọc từ file (mỗi dòng: pid arrival burst priority). Trả về n, hoặc -1. */
+/* Đọc từ file, mỗi dòng: pid arrival burst priority. Bỏ qua dòng trống và
+ * dòng bắt đầu bằng '#'. Không được viết '#' sau dữ liệu trên cùng dòng
+ * (vd "1 0 5 2 # ghi chú" bị tính là sai cú pháp), ghi chú phải ở dòng riêng.
+ * Chỉ kiểm tra cú pháp và giới hạn max_n, không kiểm tra ngữ nghĩa. Trả về n,
+ * hoặc -1 nếu không mở được file / sai cú pháp. */
 int input_from_file(const char *path, Process p[], int max_n);
 
 /* Kiểm tra dữ liệu, trả về 1 nếu hợp lệ, 0 nếu không (và in lý do ra stderr):
