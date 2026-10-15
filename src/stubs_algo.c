@@ -3,7 +3,7 @@
  * B và C chưa push code. Các hàm này không ghi Gantt (g_len = 0), main hiểu
  * là "chưa cài đặt".
  *
- * Cố ý không dùng weak: viết xong hàm thật mà quên xóa hàm ở đây thì link báo
+ * Không dùng weak: viết xong hàm thật mà quên xóa hàm ở đây thì link báo
  * "multiple definition". B, C: viết xong hàm nào thì xóa hàm đó ở đây, hết
  * thì xóa cả file.
  */
