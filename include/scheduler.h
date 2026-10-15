@@ -96,7 +96,7 @@ void sort_by_arrival(const Process p[], int n, int order[]);
 
 void schedule_fcfs(Process p[], int n, GanttEntry g[], int *g_len);
 
-/* ---------- Nhóm B, C, D: thuật toán ---------- */
+/* ---------- Nhóm B, C: thuật toán ---------- */
 
 /* B */
 void schedule_sjf(Process p[], int n, GanttEntry g[], int *g_len);
@@ -108,11 +108,10 @@ void schedule_srtf(Process p[], int n, GanttEntry g[], int *g_len);
 void schedule_priority(Process p[], int n, GanttEntry g[], int *g_len,
                        int preemptive);
 
-/* D */
+/* C */
 void schedule_rr(Process p[], int n, GanttEntry g[], int *g_len, int quantum);
-void schedule_mlfq(Process p[], int n, GanttEntry g[], int *g_len);
 
-/* ---------- Nhóm E: Gantt, metrics, so sánh ---------- */
+/* ---------- Nhóm D: Gantt, metrics, so sánh ---------- */
 
 /* Thêm khoảng [start,end) của pid (hoặc PID_IDLE) vào Gantt, tự gộp với entry
  * cuối nếu cùng pid và end cũ == start mới. Thực thi quy ước 5. Trả về 0 nếu
@@ -121,7 +120,7 @@ void schedule_mlfq(Process p[], int n, GanttEntry g[], int *g_len);
  *   - tràn MAX_GANTT
  *   - start != end của entry cuối (có lỗ hổng hoặc chồng lấn thời gian)
  *   - Gantt đang rỗng mà start != 0
- * Cả scheduler lẫn E đều dùng hàm này. */
+ * Các thuật toán và D đều dùng hàm này. */
 int gantt_append(GanttEntry g[], int *g_len, int pid, int start, int end);
 
 /* Suy ra completion/turnaround/waiting/response cho từng p[i] từ Gantt

@@ -1,10 +1,10 @@
 /*
- * stubs.c - bản TẠM của các hàm nhóm E để A link và chạy được FCFS ở M1.
+ * stubs.c - bản tạm các hàm của D, để A link và chạy được FCFS ở M1.
  *
- * KHÔNG dùng __attribute__((weak)) một cách cố ý: khi E thêm gantt.c /
- * metrics.c thật, hai định nghĩa trùng sẽ báo "multiple definition" lúc link,
- * buộc E xóa file này thay vì để stub âm thầm đè lên bản thật.
- * E: khi cài xong một hàm, xóa hàm tương ứng ở đây; xóa cả file khi hết.
+ * Cố ý không dùng weak: khi D viết gantt.c / metrics.c thật mà chưa xóa hàm
+ * ở đây thì link sẽ báo "multiple definition", D phải xóa stub chứ stub
+ * không được âm thầm đè lên bản thật.
+ * D: viết xong hàm nào thì xóa hàm đó ở đây, hết thì xóa cả file.
  */
 #include <stdio.h>
 #include "scheduler.h"
