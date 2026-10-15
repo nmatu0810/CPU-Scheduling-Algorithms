@@ -1,0 +1,5 @@
+# Vi du FCFS co CPU idle (bao cao Ch.3, vi du 1). Nhap khong theo thu tu arrival.
+# pid arrival burst priority
+2 3 2 1
+3 8 1 2
+1 2 3 3

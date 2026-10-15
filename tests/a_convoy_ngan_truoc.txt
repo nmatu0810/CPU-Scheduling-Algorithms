@@ -1,0 +1,5 @@
+# Cung 3 process nhu a_convoy_dai_truoc nhung process ngan vao truoc (vi du 2b).
+# pid arrival burst priority
+2 0 3 1
+3 0 3 1
+1 0 24 1
