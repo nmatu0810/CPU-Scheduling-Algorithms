@@ -1,0 +1,4 @@
+# Initial idle and idle between processes
+# pid arrival burst priority
+10 2 2 2
+20 7 1 1

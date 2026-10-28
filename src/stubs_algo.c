@@ -21,15 +21,3 @@ void schedule_srtf(Process p[], int n, GanttEntry g[], int *g_len)
     *g_len = 0;
 }
 
-void schedule_priority(Process p[], int n, GanttEntry g[], int *g_len,
-                       int preemptive)
-{
-    (void)p; (void)n; (void)g; (void)preemptive;
-    *g_len = 0;
-}
-
-void schedule_rr(Process p[], int n, GanttEntry g[], int *g_len, int quantum)
-{
-    (void)p; (void)n; (void)g; (void)quantum;
-    *g_len = 0;
-}
