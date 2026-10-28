@@ -1,0 +1,5 @@
+# Quantum = 2: P20 arrives exactly when P10 ends its first slice
+# Expected: P10 [0,2], P20 [2,3], P10 [3,5]
+# pid arrival burst priority
+10 0 4 1
+20 2 1 1
