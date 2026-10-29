@@ -122,3 +122,4 @@ void compare_all(const Process src[], int n, int quantum)
     }
     printf("\n");
 }
+

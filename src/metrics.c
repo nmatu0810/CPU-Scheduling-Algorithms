@@ -72,3 +72,4 @@ void calc_metrics(Process p[], int n, const GanttEntry g[], int g_len,
                                ? (100.0 * busy_time / total_time)
                                : 0.0;
 }
+

@@ -160,3 +160,4 @@ void print_gantt(const GanttEntry g[], int g_len)
         printf("%s\n\n", time_line);
     }
 }
+

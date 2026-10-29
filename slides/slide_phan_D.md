@@ -147,3 +147,4 @@
 - **D nói:** *"Cuối cùng, nhóm xin chứng minh tính bền vững của phần mềm trước các thao tác nhập liệu sai. Mời bạn A chọn Menu 1 (nhập tay) và nhập số âm hoặc burst bằng 0."*
 - **A thao tác:** Thử nhập số process = 0, nhập burst = 0, nhập PID trùng.
 - **D nói:** *"Chương trình lập tức bắt lỗi, in thông báo chỉ dẫn rõ ràng ra stderr và yêu cầu nhập lại, hệ thống không bị crash hay tràn bộ nhớ. Phần demo của nhóm em đến đây là kết thúc, xin trân trọng cảm ơn thầy cô đã lắng nghe!"*
+
