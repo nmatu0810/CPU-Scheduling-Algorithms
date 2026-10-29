@@ -9,18 +9,6 @@
  */
 #include "scheduler.h"
 
-void schedule_sjf(Process p[], int n, GanttEntry g[], int *g_len)
-{
-    (void)p; (void)n; (void)g;
-    *g_len = 0;
-}
-
-void schedule_srtf(Process p[], int n, GanttEntry g[], int *g_len)
-{
-    (void)p; (void)n; (void)g;
-    *g_len = 0;
-}
-
 void schedule_priority(Process p[], int n, GanttEntry g[], int *g_len,
                        int preemptive)
 {
