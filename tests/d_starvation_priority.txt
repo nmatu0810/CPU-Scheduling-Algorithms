@@ -1,0 +1,10 @@
+# Cau chuyen 2: Hien tuong Starvation (bo doi) trong Priority Scheduling.
+# P1 co priority thap (gia tri 5, burst 10). Sau khi P1 bat dau chay (t=0),
+# cac tien trinh co do uu tien cao hon (P2, P3, P4, P5) lien tuc den va chiem CPU.
+# Trong Priority ngat, P1 bi ngat o t=1 va phai doi den khi tat ca process uu tien cao chay xong.
+# pid arrival burst priority
+1 0 10 5
+2 1 3 1
+3 3 4 2
+4 5 2 1
+5 7 3 2

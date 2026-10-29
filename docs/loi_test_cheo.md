@@ -4,4 +4,4 @@ Vòng test: A test code của B, B test C, C test D, D test A. Mỗi người t�
 
 | # | Người test | Module | Input gây lỗi (tên file hoặc dữ liệu) | Mong đợi | Thực tế | Trạng thái |
 |---|---|---|---|---|---|---|
-| 1 | | | | | | |
+| 1 | D | validate_processes (input.c) | Tiến trình có `pid < 0` khác -1 (ví dụ `-2 0 5 1`) | Báo lỗi và từ chối vì PID phải là số không âm (`pid >= 0`), tránh xung đột quy ước `PID_IDLE = -1` | `validate_processes` chỉ chặn `pid == PID_IDLE (-1)` nên chấp nhận `pid = -2`, in ra `P-2` | Chưa sửa |

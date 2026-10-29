@@ -1,0 +1,8 @@
+# Bo test khao sat anh huong cua Time Quantum trong Round Robin.
+# Khi q = 2: thoi gian dap ung (RT) rat tot, cac process luan phien deu dan.
+# Khi q = 10 (>= max burst): Round Robin suy bien hoan toan ve FCFS.
+# pid arrival burst priority
+1 0 8 1
+2 1 4 2
+3 2 9 1
+4 3 5 3
