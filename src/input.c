@@ -67,9 +67,10 @@ int validate_processes(const Process p[], int n)
         return 0;
     }
     for (int i = 0; i < n; i++) {
-        if (p[i].pid == PID_IDLE) {
-            fprintf(stderr, "Loi: process thu %d co pid = %d (danh rieng cho idle).\n",
-                    i + 1, PID_IDLE);
+        /* Chặn mọi pid âm, không chỉ PID_IDLE: P-2 in ra dễ nhầm với idle. */
+        if (p[i].pid < 0) {
+            fprintf(stderr, "Loi: process thu %d co pid = %d, pid phai >= 0.\n",
+                    i + 1, p[i].pid);
             return 0;
         }
         if (p[i].arrival_time < 0) {

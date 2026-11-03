@@ -91,7 +91,7 @@ int input_from_file(const char *path, Process p[], int max_n);
 /* Kiểm tra dữ liệu, trả về 1 nếu hợp lệ, 0 nếu không (và in lý do ra stderr):
  *   - 0 < n <= MAX_PROCESSES
  *   - arrival >= 0, burst > 0, priority >= 0
- *   - pid không trùng và không bằng PID_IDLE
+ *   - pid >= 0 (nên không đụng PID_IDLE) và không trùng
  *   - max(arrival) + sum(burst) <= MAX_TOTAL_TIME (tính bằng long long hoặc
  *     kiểm tra từng bước để không tràn int) */
 int validate_processes(const Process p[], int n);

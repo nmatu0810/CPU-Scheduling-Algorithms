@@ -18,9 +18,14 @@ $(BUILD)/%.o: src/%.c | $(BUILD)
 $(BUILD):
 	mkdir -p $@
 
+# make test: chạy tests/test_all.c với mọi module trừ main.c
+test: $(filter-out $(BUILD)/main.o,$(OBJS)) tests/test_all.c | $(BUILD)
+	$(CC) $(CFLAGS) $^ -o $(BUILD)/test_all
+	./$(BUILD)/test_all
+
 clean:
 	rm -rf $(BUILD) $(TARGET)
 
-.PHONY: clean
+.PHONY: clean test
 
 -include $(DEPS)
