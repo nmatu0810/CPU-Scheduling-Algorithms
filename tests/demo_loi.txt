@@ -1,0 +1,5 @@
+# Demo du lieu sai: pid 2 bi trung. Chuong trinh phai bao loi va giu du lieu cu.
+# pid arrival burst priority
+1 0 5 1
+2 1 3 2
+2 2 4 1

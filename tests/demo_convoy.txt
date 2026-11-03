@@ -1,0 +1,8 @@
+# Demo 2, convoy effect: mot process rat dai nhap truoc, bon process ngan cung den luc 0.
+# FCFS bat ca nhom cho P1, SJF cho process ngan chay truoc.
+# pid arrival burst priority
+1 0 20 1
+2 0 2 1
+3 0 2 1
+4 0 2 1
+5 0 2 1

@@ -1,0 +1,9 @@
+# Demo 3, starvation: P1 uu tien thap (5) den luc 0, cac process uu tien cao (1) den lien tuc.
+# Priority bat P1 cho toi khi het process uu tien cao, Round Robin thi P1 duoc chay som.
+# pid arrival burst priority
+1 0 4 5
+2 0 3 1
+3 2 3 1
+4 5 3 1
+5 8 3 1
+6 11 3 1

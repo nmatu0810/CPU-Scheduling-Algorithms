@@ -1,0 +1,5 @@
+# Vi du muc 2.4: process den dung luc het quantum (q = 2).
+# pid arrival burst priority
+1 0 5 0
+2 1 3 0
+3 2 1 0

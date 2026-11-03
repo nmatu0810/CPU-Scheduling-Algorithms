@@ -1,0 +1,6 @@
+# Vi du muc 2.2 (SJF, SRTF), lay tu sach Silberschatz.
+# pid arrival burst priority
+1 0 7 0
+2 2 4 0
+3 4 1 0
+4 5 4 0
