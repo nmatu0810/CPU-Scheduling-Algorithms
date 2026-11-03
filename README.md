@@ -9,10 +9,11 @@ Cần gcc và make (Linux).
 ```
 make            # tạo ./scheduler
 ./scheduler
+make test       # chạy test tự động, dòng cuối phải là "0 loi"
 make clean      # xóa build/ và ./scheduler
 ```
 
-Trong menu, chọn 1 để nhập process bằng tay hoặc 2 để đọc từ file, rồi chọn thuật toán. Thuật toán nào chưa có code sẽ báo "chua cai dat".
+Trong menu, chọn 1 để nhập process bằng tay hoặc 2 để đọc từ file, rồi chọn thuật toán. Mục 9 chạy cùng dữ liệu qua cả sáu cấu hình và in bảng so sánh.
 
 ## Định dạng file input
 
@@ -38,9 +39,8 @@ src/fcfs.c            FCFS
 src/sjf.c, srtf.c     B
 src/priority.c, rr.c  C
 src/gantt.c, metrics.c, compare.c   D
-src/stubs.c           hàm tạm của D, xóa dần khi D viết xong
-src/stubs_algo.c      hàm tạm của B và C, xóa dần khi viết xong
-tests/                file input mẫu
+tests/                file input mẫu, test_all.c (make test)
+docs/                 kịch bản demo, lỗi tìm được khi test chéo
 report/               báo cáo Word
 slides/               slide
 ```
@@ -56,7 +56,7 @@ Trước khi viết code, đọc block comment ở đầu `include/scheduler.h`.
 - Đầu hàm phải đặt `*g_len = 0` và `remaining_time = burst_time`.
 - Priority: số nhỏ là ưu tiên cao. Hòa thì xét arrival, rồi vị trí trong `p[]`.
 
-Khi viết xong hàm thật, xóa hàm tạm tương ứng trong `src/stubs.c` hoặc `src/stubs_algo.c`. Nếu quên, lúc link sẽ báo `multiple definition`.
+Sửa module nào thì chạy `make test` trước khi gửi pull request.
 
 ## Làm việc với git
 
