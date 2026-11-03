@@ -1,0 +1,8 @@
+# SJF khi hoa burst: den som hon chay truoc, hoa nua thi theo thu tu nhap.
+# Luc 3, P1 xong; P2, P3, P4 cung burst 2. P4 den luc 1, P2 va P3 den luc 2.
+# P2 nhap truoc P3 nen chay truoc. Mong doi (SJF): P1 [0,3], P4 [3,5], P2 [5,7], P3 [7,9]
+# pid arrival burst priority
+1 0 3 1
+2 2 2 1
+3 2 2 1
+4 1 2 1
