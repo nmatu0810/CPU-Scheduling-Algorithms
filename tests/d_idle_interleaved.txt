@@ -1,0 +1,9 @@
+# Bo test kiem tra CPU idle xen ke nhieu doan va khoi idle ban dau o t=0.
+# He thong trai qua nhieu khoang nghi: [0,2], [5,8], [12,15], [17,20].
+# Dung de kiem thu cong thuc CPU utilization va tinh lien mach cua Gantt.
+# pid arrival burst priority
+1 2 3 1
+2 8 4 2
+3 15 2 1
+4 20 5 3
+
