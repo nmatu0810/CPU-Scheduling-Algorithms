@@ -40,7 +40,7 @@ src/sjf.c, srtf.c     B
 src/priority.c, rr.c  C
 src/gantt.c, metrics.c, compare.c   D
 tests/                file input mẫu, test_all.c (make test)
-docs/                 kịch bản demo, lỗi tìm được khi test chéo
+docs/                 hướng dẫn chạy demo, kịch bản demo, lỗi tìm được khi test chéo
 report/               báo cáo Word
 slides/               slide
 ```
